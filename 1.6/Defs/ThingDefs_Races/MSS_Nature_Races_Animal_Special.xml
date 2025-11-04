@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Poluxmaker -->
+  <ThingDef ParentName="DryadBase">
+    <defName>MSS_Nature_Poluxmaker</defName>
+    <label>Poluxmaker Dryad</label>
+    <description>A dryad caste with the unique ability to produce new Polux pods and reproduce the pollution-cleansing Polux tree.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PoluxSeed</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+    </statBases>
+    <race>
+      <useMeatFrom>Dryad_Basic</useMeatFrom>
+      <foodType>Processed</foodType> <!-- Theoretically should allow them to eat wastepacks -->
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded>
+          <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.13)</li>
+        <li>(0.15, 0, 0.01)</li>
+        <li>(0, 0, -0.14)</li>
+        <li>(-0.15, 0, 0.01)</li>
+      </headPosPerRotation>
+    </race>
+    <comps>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>PoluxSeed</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>900000</spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="DryadKindBase">
+    <defName>MSS_Nature_Poluxmaker</defName>
+    <label>Poluxmaker Dryad</label>
+    <race>MSS_Nature_Poluxmaker</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad_Poluxmaker/DryadPoluxmaker</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad_Gaumaker/Dessicated_DryadGaumaker</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>
