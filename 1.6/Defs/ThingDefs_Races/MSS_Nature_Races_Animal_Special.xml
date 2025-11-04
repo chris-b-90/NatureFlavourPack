@@ -15,7 +15,7 @@
     </statBases>
     <race>
       <useMeatFrom>Dryad_Basic</useMeatFrom>
-      <foodType>Processed</foodType> <!-- Theoretically should allow them to eat wastepacks -->
+      <!-- <foodType>PoluxDryad</foodType>  Add tag to wastepacks to enable dryads to eat them -->
       <lifeStageAges>
         <li>
           <def>AnimalAdult</def>
