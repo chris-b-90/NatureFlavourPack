@@ -26,8 +26,6 @@
       <li MayRequire="redmattis.bigsmall.core">BS_Pain_None</li>
       <li>Delicate</li>
       <li>Beauty_Beautiful</li>
-      <li MayRequire="vanillaracesexpanded.phytokin">VRE_FoliageHair</li>
-      <li MayRequire="vanillaracesexpanded.phytokin">VRE_BarkSkin</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_HairColor_Gauranlen</li>
       <li MayRequire="redmattis.bigsmall.core">BS_PerfectMemory</li>
       <li>Hair_Grayless</li>
