@@ -1,0 +1,5 @@
+/Users/keyz/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/NatureFlavourPack/1.6/Assemblies/NatureFlavourPack.dll
+/Users/keyz/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/NatureFlavourPack/1.6/Source/NatureFlavourPack/obj/Release/NatureFlavourPack.csproj.AssemblyReference.cache
+/Users/keyz/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/NatureFlavourPack/1.6/Source/NatureFlavourPack/obj/Release/NatureFlavourPack.GeneratedMSBuildEditorConfig.editorconfig
+/Users/keyz/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/NatureFlavourPack/1.6/Source/NatureFlavourPack/obj/Release/NatureFlavourPack.csproj.CoreCompileInputs.cache
+/Users/keyz/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/NatureFlavourPack/1.6/Source/NatureFlavourPack/obj/Release/NatureFlavourPack.dll

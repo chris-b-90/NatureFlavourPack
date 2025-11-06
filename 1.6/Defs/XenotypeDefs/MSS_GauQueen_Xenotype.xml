@@ -10,7 +10,7 @@
     <inheritable>true</inheritable>
     <genes>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_Photosynthesis</li>
-      <li MayRequire="sarg.alphagenes">AG_AsexualFission</li>
+      <!-- <li MayRequire="sarg.alphagenes">AG_AsexualFission</li> -->
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_GauranlenAffinity</li>
       <li MayRequire="redmattis.bigsmall.core">BS_AriettyFrame</li>
       <li MayRequire="redmattis.bigsmall.core">BS_CannotWearClothingOrArmor</li>
@@ -43,6 +43,7 @@
       <li MayRequire="sarg.alphagenes">AG_BodyTentacles</li>
       <li MayRequire="redmattis.bigsmall.core">BS_PerfectMemory</li>
       <li MayRequire="redmattis.betterprerequisites">BS_FacialAnimDisabled</li>
+			<li>MSS_GauStinger</li>
     </genes>
   </XenotypeDef>
 </Defs>

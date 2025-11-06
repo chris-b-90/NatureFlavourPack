@@ -1,0 +1,120 @@
+<Defs>
+
+	<HediffDef ParentName="InfectionBase">
+		<defName>MSS_ParasiticImplantation</defName>
+		<label>parasitic implantation</label>
+		<description>Affected by parasitic implantation. If the implantation advances to severity 1, or if the creature dies when it is sufficiently advanced (more than 90%), the human larvae inside the parasitic eggs will devour the victim from inside and hatch from its corpse. Gestation time is 15 days.</description>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<comps>
+			<li Class="NatureFlavourPack.HediffCompProperties_GauParasites">
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.066</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.05</painOffset>
+				 <hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.33</minSeverity>
+				<label>major</label>
+				<painOffset>0.5</painOffset>
+				 <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.78</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.6</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+				 <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.87</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>1</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+				 <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>MSS_GauStinger</defName>
+		<label>sting endogenic parasitic eggs</label>
+		<description>Implant eggs with this person's endogenes into any subject using a disgusting injector stinger.\n\nWhen implanted, eggs will begin growing inside the target, eventually erupting and killing them.</description>
+		<iconPath>UI/Icons/Genes/AG_ParasiticStingerEndogenes</iconPath>
+		<warmupStartSound>ReimplantXenogerm_Cast</warmupStartSound>
+		<warmupEffecter>Implant_Xenogerm</warmupEffecter>
+		<cooldownTicksRange>120000</cooldownTicksRange>
+		<hostile>true</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AlphaGenes.CompProperties_AbilityParasiticStinger">
+				<hediffDef>MSS_ParasiticImplantation</hediffDef>
+				<endogenes>true</endogenes>
+			</li>
+		</comps>
+	</AbilityDef>
+
+    <GeneDef>
+		<defName>MSS_GauStinger</defName>
+		<label>parasitic gauranlen implanter, endogenes</label>
+		<marketValueFactor>1.25</marketValueFactor>
+		<description>Carriers of this gene can inject a copy of their germline into another person through a very intimidating injector stinger. Instead of implanting their genes into the target, this will inject them with eggs that will slowly grow inside them. These eggs will eventually hatch into a newborn with the same xenogenes as their progenitor. The ability doesn't cause the user's genes to need to regrow, but the ability cannot be used constantly, needing to recharge. It will also damage its target, and cause a bloody mess. And the target will obviously die when the babies hatch. Ah, the circle of nature!</description>
+		<iconPath>UI/Icons/Genes/AG_ParasiticStinger</iconPath>
+		<displayCategory>Ability</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<abilities>
+			<li>MSS_GauStinger</li>
+		</abilities>
+		<customEffectDescriptions>
+			<li>Bear in mind this won't work for xenogenes, only endogenes.</li>
+			<li>It will work on any non-hostile human, but it will anger their faction and make them hostile immediately.</li>
+			<li>The baby has a 25% chance per gene of "absorbing" any of the genes of the poor host.</li>
+		</customEffectDescriptions>
+		<selectionWeight>0</selectionWeight>
+		<descriptionHyperlinks>
+			<AbilityDef>MSS_GauStinger</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>5</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

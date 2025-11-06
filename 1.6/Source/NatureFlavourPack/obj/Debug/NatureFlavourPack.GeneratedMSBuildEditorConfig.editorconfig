@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = NatureFlavourPack
+build_property.ProjectDir = /Users/keyz/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/NatureFlavourPack/1.6/Source/NatureFlavourPack/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
