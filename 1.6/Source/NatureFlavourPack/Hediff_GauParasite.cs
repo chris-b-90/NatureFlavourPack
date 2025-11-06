@@ -123,7 +123,7 @@ class HediffComp_GauParasites : HediffComp_Parasites
                         );
                 }
 
-                pawn.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AdultMinAgeTicks;
+                pawn.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AdultMinAgeTicks - GenDate.TicksPerDay;
             }
             else
             {
