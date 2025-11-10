@@ -20,6 +20,11 @@
             <steamWorkshopUrl>steam://url/CommunityFilePage/2891845502</steamWorkshopUrl>
             <downloadUrl>https://github.com/juanosarg/AlphaGenes</downloadUrl>
         </li>
+        <li>
+          <packageId>dfifd.rootofsapience</packageId>
+          <displayName>Roots of Sapience</displayName>
+          <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3528064150</steamWorkshopUrl>
+        </li>
     </modDependencies>
 
     <loadAfter>

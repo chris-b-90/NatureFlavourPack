@@ -10,13 +10,13 @@
     <inheritable>true</inheritable>
     <genes>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_Photosynthesis</li>
-      <!-- <li MayRequire="sarg.alphagenes">AG_AsexualFission</li> -->
+      <li MayRequire="sarg.alphagenes">AG_AsexualFission</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_GauranlenAffinity</li>
       <li MayRequire="redmattis.bigsmall.core">BS_AriettyFrame</li>
       <li MayRequire="redmattis.bigsmall.core">BS_CannotWearClothingOrArmor</li>
       <li MayRequire="redmattis.bigsmall.core">MSS_GauParasite</li>
       <li MayRequire="sarg.alphagenes">AG_Spinnerets</li>
-      <li MayRequire="sarg.alphagenes">AG_Female</li>AG_AsexualFission
+      <li MayRequire="sarg.alphagenes">AG_Female</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_SapBlood</li>
       <li MayRequire="sarg.alphagenes">AG_PlantFlesh</li>
       <li MayRequire="sarg.alphagenes">AG_LightSustenance</li>
